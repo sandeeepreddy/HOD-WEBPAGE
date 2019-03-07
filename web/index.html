@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Bootstrap Example</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.6/umd/popper.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.2.1/js/bootstrap.min.js"></script>
+  <script type="text/javascript" src="js/links.js"></script>
+  <style type="text/css">
+    .x-layout {
+      overflow-x: hidden;
+    }
+  </style>
+</head>
+<body class="x-layout">
+<header>
+  <div class="row" rowspan="2">
+    <div class="col-3 logo">
+      <img class="img-fluid" src="./images/logo.jpg" style="height: 100px;">  
+    </div>
+    <div class="col-9 header-text">
+      <h1 class="text-center  blue text-primary mt-4" >ELECTRICAL & ELECTRONICS ENGINEERING</h1>      
+    </div>
+  </div>
+</header>
+  <nav class="navbar navbar-expand-md bg-info navbar-dark">
+    <a class="navbar-brand" href="#">EEE</a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsibleNavbar">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="collapsibleNavbar">
+      <ul class="navbar-nav">
+        <li class="nav-item">
+          <a class="nav-link" href="#" onclick="home()">Home</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#" onclick="about()">About</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#" onclick="contact()">Contact</a>
+        </li>    
+      </ul>
+    </div>  
+  </nav>
+<br />
+<main id="content"></main>
+<script type="text/javascript">
+  $(document).ready(function(){
+    home();
+  })
+</script>
+<br /><br /><br />
+</body>
+</html>
+
